@@ -63,7 +63,16 @@
 			<section class="section solutions overlay">
 				<div class="container">
 					<h1 class="solutions-title">Эффективные решения для вашего бизнеса</h1>
-					<button type="button" class="solutions-btn">Заказать услугу</button>
+					<button type="button" class="solutions-btn" data-modal-open>Заказать услугу</button>
+				</div>
+				<div class="backdrop is-hidden" data-modal>
+					<div class="modal">
+						<button type="button" class="close-btn" data-modal-close>
+							<svg class="close-icon" width="18" height="18">
+								<use href="./images/icons.svg#icon-close"></use>
+							</svg>
+						</button>
+					</div>
 				</div>
 			</section>
 
@@ -91,7 +100,7 @@
 						<li class="peculiarities-item">
 							<div class="peculiarities-thumb">
 								<svg class="peculiarities-icon" width="70" height="70">
-									<use href="./images/icons.svg#icon-clock-1" ></use>
+									<use href="./images/icons.svg#icon-clock-1"></use>
 								</svg>
 							</div>
 							<h3 class="peculiarities-title">Пунктуальность</h3>
@@ -134,15 +143,24 @@
 					<h2 class="doing-title">Чем мы занимаемся</h2>
 					<ul class="doing-items">
 						<li class="doing-item">
-							<img src="./images/doing/working-table.jpg" width="370" height="294" alt="table" />
+							<div class="doing-thumb">
+								<img src="./images/doing/working-table.jpg" width="370" height="294" alt="table" />
+								<h3 class="doing-subtitle">Десктопные приложения</h3>
+							</div>
 						</li>
 
 						<li class="doing-item">
-							<img src="./images/doing/phone-laptop.jpg" width="370" height="294" alt="laptop" />
+							<div class="doing-thumb">
+								<img src="./images/doing/phone-laptop.jpg" width="370" height="294" alt="laptop" />
+								<h3 class="doing-subtitle">Мобильные приложения</h3>
+							</div>
 						</li>
 
 						<li class="doing-item">
-							<img src="./images/doing/tablet.jpg" width="370" height="294" alt="tablet" />
+							<div class="doing-thumb">
+								<img src="./images/doing/tablet.jpg" width="370" height="294" alt="tablet" />
+								<h3 class="doing-subtitle">Дизайнерские решения</h3>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -174,7 +192,7 @@
 											rel="noopener norefferer"
 											class="social-link"
 										>
-											<svg class="social-icon" width="20" height="20" >
+											<svg class="social-icon" width="20" height="20">
 												<use href="./images/icons.svg#icon-instagram-member"></use>
 											</svg>
 										</a>
