@@ -289,15 +289,12 @@ img {
 }
 
 .backdrop.is-hidden {
-	visibility: hidden;
+	/* visibility: hidden; */
 	opacity: 0;
 	pointer-events: none;
 }
 
 .is-hidden .modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
 	transform: translate(-50%, -50%) scale(0.1);
 	opacity: 0;
 }
@@ -334,6 +331,7 @@ img {
 	border-radius: 50%;
 	transition: color 250ms var(--cubic), border-color 250ms var(--cubic),
 		box-shadow 250ms var(--cubic);
+	cursor: pointer;	
 }
 
 .close-btn:hover,
